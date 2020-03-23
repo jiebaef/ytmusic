@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% include "index.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="static/css/results.css">
+{% endblock %}
+
+{% block content %}
+    {% for video in videos %}
+        <div class="video">
+            <form action="/add" method="POST" id="videosForm">
+                <span>{{ video.getTitle() }}</span>
+                <br>
+                <img src="{{ video.getThumbnailUrl() }}">
+                <input name="videoId" class="videoId" type="hidden" value="{{ video.getVideoId() }}">
+            </form>
+        </div>
+        <br>
+    {% endfor %}
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="static/js/search.js"></script>
+{% endblock %}

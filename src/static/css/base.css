@@ -1,0 +1,10 @@
+#container {
+    display: table;
+    width: 100%;
+}
+.content {
+    display: table-cell;
+    max-width: 90%;
+    text-align: center;
+    vertical-align: middle;
+ }

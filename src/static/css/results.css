@@ -1,0 +1,9 @@
+span {
+    font-size: 1vw;
+}
+img {
+    width: 25vw;
+    max-width: 320px;
+    height: auto; 
+    object-fit: contain;
+}

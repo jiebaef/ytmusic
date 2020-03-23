@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block stylesheets %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block button %}
+    <a class="btn btn-outline-success my-2 my-sm-0" href="/logout">Logout</a>
+{% endblock %}
+
+{% block content %}
+    <div id="startSelenium" class="btn btn-outline-primary selenium">Start Selenium</div>
+    <div id="pausePlay" class="btn btn-outline-primary selenium">Pause or Play</div>
+    <div id="skipSong" class="btn btn-outline-primary selenium">Skip</div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="static/js/admin.js"></script>
+{% endblock %}
